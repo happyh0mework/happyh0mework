@@ -1,42 +1,59 @@
-body {
-    margin: 0px;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+    font-family:"Poppins",sans-serif;
 }
-main {
-    margin-left: 20px;
+
+body{
+    min-height: 100vh;
+    background:url('images/cool-background.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     padding: 20px 100px;
+     background: transparent;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     z-index: 100;
+}
+.Logo {
+    font-size: 32px;
+    color: #a4a4a4;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #f0f8ff;
+    font-weight: 500px;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.navbar a::before { 
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background:  #f0f8ff;
+    transition: .3s;
+}
+.navbar a:hover::before {
+width: 100%;
+
+}
+.blerps a{
     margin-right: 20px;
-}
-h1{
-    text-align: center;
-    margin-left: 20px  ;
-}
-.navbar ul{
-    list-style-type: none;
-    background-color: hsl(0, 0%, 25%);
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
-}
-.navbar a{
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-    text-align: center;
-}
-.navbar a:hover{
-  background-color: hsl(0, 0%, 10%);
-}
-.navbar li {
-float:  left;
-}
-.Gαmes-i-like{
-    text-align: center;
-    color: aliceblue;
-    text-decoration: none;
-}
-
-
-.abt a{
-    text-align: center;
-    
 }
