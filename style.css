@@ -47,7 +47,7 @@ body{
     left: 0;
     width: 0;
     height: 2px;
-    background:  rgb(161, 161, 161);
+    background:  rgb(255, 255, 255);
     transition: .3s;
 }
 .navbar a:hover::before {
@@ -55,4 +55,9 @@ width: 100%;
 }
 .secret a{
     text-decoration: none;
+}
+
+.home-title{
+    text-align: center;
+    
 }
